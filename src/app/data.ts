@@ -16,8 +16,4 @@ export const urls: {
     name: "Instagram",
     url: "https://www.instagram.com/michael_slevin",
   },
-  {
-    name: "imnotspeeding.com",
-    url: "https://www.imnotspeeding.com",
-  },
 ];

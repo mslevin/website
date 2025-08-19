@@ -22,7 +22,7 @@ export default function Home() {
           Grabango
         </a>
         , where we were building computer-vision based retrofit solutions for
-        cashierless checkout- think Amazon Go, but better and less evil.
+        cashierless checkout.
       </p>
       <p>
         Growing up in Sunnyvale, I was surrounded by tech from a young age, and
