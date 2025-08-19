@@ -28,6 +28,9 @@ export default function Home() {
               <div>Cal Poly, San Luis Obispo</div>
               <div>{address}</div>
             </div>
+            <a href="/files/Michael Slevin Resume 2025.pdf" download>
+              Resume
+            </a>
             <div className="flex flex-col">
               {urls.map((url) => (
                 <a href={url.url} key={url.name}>
