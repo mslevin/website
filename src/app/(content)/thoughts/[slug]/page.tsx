@@ -1,9 +1,7 @@
 import { getPostBySlug } from "@/lib/api";
 
 type ThoughtPageProps = {
-  params: {
-    slug: string;
-  };
+  params: Promise<{ slug: string }>;
 };
 
 export default async function Thoughts({ params }: ThoughtPageProps) {
