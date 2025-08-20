@@ -1,21 +1,11 @@
 import Link from "next/link";
-import PostType from "@/types/post";
+
 import { getAllPosts } from "@/lib/api";
 
 export default async function Thoughts() {
-  const allThoughts = await getAllPosts([
-    "title",
-    "date",
-    "slug",
-    "author",
-    "coverImage",
-    "excerpt",
-  ]);
+  const allThoughts = await getAllPosts();
   return (
-    <div className="flex flex-col gap-4 justify-center w-[90%] mx-auto">
-      <Link href="/" className="text-lg ">
-        home
-      </Link>
+    <div className="">
       {allThoughts.map((post) => (
         <div key={post.slug}>
           <div className="flex gap-2">

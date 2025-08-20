@@ -1,19 +1,8 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Image from "next/image";
 import Link from "next/link";
 import { urls } from "./data";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
   title: "Michael Slevin",
@@ -32,18 +21,18 @@ export default function RootLayout({
   const address = String.fromCharCode(...bytes);
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className="antialiased">
         <main className="font-[Times_New_Roman] p-8 gap-8 flex">
           <div className="flex flex-col gap-4">
-            <Image
-              src="/img/flowers_crop.jpeg"
-              alt="Me, standing in front of a flower bush."
-              width={200}
-              height={200}
-              priority
-            />
+            <Link href="/">
+              <Image
+                src="/img/me.jpeg"
+                alt="Me, standing in front of a flower bush."
+                width={200}
+                height={200}
+                priority
+              />
+            </Link>
             <div className="flex gap-1">
               <div>
                 <div className="text-2xl font-bold">Michael Slevin</div>

@@ -40,8 +40,11 @@ export default function Home() {
         , breaking, buying, or selling cars. I&apos;m a man of many hobbies, but
         I&apos;ll always be a car guy first.
       </p>
-      <Link href="/thoughts" className="text-lg ">
+      <Link href="/thoughts" className="">
         thoughts
+      </Link>
+      <Link href="/things" className="">
+        things
       </Link>
     </div>
   );
