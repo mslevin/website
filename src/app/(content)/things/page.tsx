@@ -1,5 +1,35 @@
 import Link from "next/link";
 
-export default async function Thoughts() {
-  return <div className="">content here</div>;
+type Thing = {
+  title: string;
+  description?: string;
+  link: string;
+};
+
+const things: Thing[] = [
+  {
+    title: "Brainfuck interpreter",
+    description: "Visualize brainfuck code execution",
+    link: "/things/brainfuck",
+  },
+];
+
+export default async function Things() {
+  return (
+    <div className="">
+      <div className="pb-2">
+        This is a collection of things- projects, explorations, examples, etc.
+      </div>
+      <ul>
+        {things.map((thing) => (
+          <li key={thing.title}>
+            <Link href={thing.link}>{thing.title}</Link>
+            {thing.description && (
+              <div className="text-sm">{thing.description}</div>
+            )}
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
 }
