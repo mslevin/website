@@ -11,17 +11,17 @@ export default function ContentLayout({
   console.log(segments);
   return (
     <div className="flex flex-col gap-4 justify-center w-[90%] mx-auto">
-      <div>
+      <div className="flex">
         <Link href="/" className="">
           home
         </Link>
         {segments.map((segment) => (
-          <>
+          <div key={segment}>
             {" - "}
-            <Link href={`/${segment}`} className="" key={segment}>
+            <Link href={`/${segment}`} className="">
               {segment.replace("_", " ")}
             </Link>
-          </>
+          </div>
         ))}
       </div>
       {children}
