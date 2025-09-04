@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import "./tufte.css";
 import Image from "next/image";
 import Link from "next/link";
 import { urls } from "./data";
@@ -22,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="antialiased">
-        <main className="font-[Times_New_Roman] p-8 gap-8 flex">
+        <main className="p-8 gap-8 flex">
           <div className="flex flex-col gap-4">
             <Link href="/">
               <Image
@@ -40,7 +41,7 @@ export default function RootLayout({
                   <div>Software Engineer</div>
                   <div>Berkeley, CA</div>
                   <div>B.S. Computer Science</div>
-                  <div>Cal Poly, San Luis Obispo</div>
+                  <div>Cal Poly San Luis Obispo</div>
                   <div>{address}</div>
                 </div>
                 <a href="/files/Michael Slevin Resume 2025.pdf" download>

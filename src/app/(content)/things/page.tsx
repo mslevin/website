@@ -8,6 +8,11 @@ type Thing = {
 
 const things: Thing[] = [
   {
+    title: "BMWs",
+    description: "A showcase of the various BMWs I've owned over the years.",
+    link: "/things/bmws",
+  },
+  {
     title: "Brainfuck interpreter",
     description: "Visualize brainfuck code execution",
     link: "/things/brainfuck",
