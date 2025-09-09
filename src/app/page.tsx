@@ -42,14 +42,17 @@ export default function Home() {
           , breaking, buying, or selling cars. I&apos;m a man of many hobbies,
           but I&apos;ll always be a car guy first.
         </p>
-        <section>
+        {/* <section>
           <Link href="/thoughts" className="">
             <h3 id="epigraphs">thoughts</h3>
           </Link>
           <Link href="/things" className="">
             <h3 id="things">things</h3>
           </Link>
-        </section>
+          <Link href="/cars" className="">
+            <h3 id="cars">cars</h3>
+          </Link>
+        </section> */}
       </section>
     </article>
   );

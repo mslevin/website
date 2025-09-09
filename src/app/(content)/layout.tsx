@@ -10,7 +10,7 @@ export default function ContentLayout({
   const segments = useSelectedLayoutSegments();
   console.log(segments);
   return (
-    <div className="flex flex-col gap-4 justify-center w-[90%] mx-auto">
+    <div className="flex flex-col gap-4 justify-center mx-auto">
       <div className="flex">
         <Link href="/" className="">
           home
