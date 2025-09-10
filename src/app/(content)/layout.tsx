@@ -8,19 +8,22 @@ export default function ContentLayout({
   children: React.ReactNode;
 }) {
   const segments = useSelectedLayoutSegments();
-  console.log(segments);
   return (
     <div className="flex flex-col gap-4 justify-center mx-auto">
       <div className="flex">
         <Link href="/" className="">
           home
         </Link>
-        {segments.map((segment) => (
+        {segments.map((segment, i) => (
           <div key={segment}>
             {" - "}
-            <Link href={`/${segment}`} className="">
-              {segment.replace("_", " ")}
-            </Link>
+            {i === segments.length - 1 ? (
+              <span>{segment}</span>
+            ) : (
+              <Link href={`/${segment}`} className="">
+                {segment}
+              </Link>
+            )}
           </div>
         ))}
       </div>

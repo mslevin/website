@@ -6,7 +6,10 @@ import Link from "next/link";
 import { urls } from "./data";
 
 export const metadata: Metadata = {
-  title: "Michael Slevin",
+  title: {
+    default: "Michael Slevin",
+    template: "%s | Michael Slevin",
+  },
   description: "Michael Slevin's personal website",
 };
 
