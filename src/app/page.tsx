@@ -11,19 +11,7 @@ export default function Home() {
           <a target="_blank" href="https://www.meter.com">
             Meter 
           </a>
-          . While my focus in the past has been primarily on the frontend,
-          I&apos;m always learning and I enjoy working across the stack. I
-          started at Complete in August 2023, and have worked on every aspect of
-          our stack and product offerings. Previously I worked at a startup in
-          Berkeley called{" "}
-          <a
-            target="_blank"
-            href="https://www.paymentsdive.com/news/grabango-ceases-operations/729589/"
-          >
-            Grabango
-          </a>
-          , where we were building computer-vision based retrofit solutions for
-          cashierless checkout.
+          .
         </p>
         <p>
           Growing up in Sunnyvale, I was surrounded by tech from a young age,
