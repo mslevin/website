@@ -8,8 +8,8 @@ export default function Home() {
       <section>
         <p>
           I&apos;m Michael, an engineer at{" "}
-          <a target="_blank" href="https://www.complete.so">
-            Complete
+          <a target="_blank" href="https://www.meter.com">
+            Meter 
           </a>
           . While my focus in the past has been primarily on the frontend,
           I&apos;m always learning and I enjoy working across the stack. I
